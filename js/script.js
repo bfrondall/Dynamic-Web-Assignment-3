@@ -5,6 +5,9 @@ var theta;
 var fade;
 var fadeAmount = 1 
 //let button;
+
+//CREDIT FOR GETTING GIF: https://editor.p5js.org/kjhollen/sketches/S1bVzeF8Z
+//GIF: https://i.imgur.com/mcAdurl.gif
 var gif_loadImg, gif_createImg;
 
 function preload() {
@@ -14,6 +17,8 @@ function preload() {
 
 function setup(){
 
+	//CREDIT FOR PULSATING: https://editor.p5js.org/dansakamoto/sketches/H1ICcXXtm
+
 	maxDiameter = 20; 
 	theta = 0; 
 	fade = 0
@@ -21,7 +26,7 @@ function setup(){
 	var cnv = createCanvas(windowWidth*4, windowHeight*4)
 	cnv.parent("p5canvas");
 
-//button for pulsating speed, didn't work 
+//button for pulsating speed, didn't work: https://p5js.org/reference/#/p5/createButton 
 
 	// button = createButton('Faster');
 	// button.position(0,0);
@@ -54,9 +59,6 @@ function setup(){
 
 function draw(){
 
-	//image(vidcapture, 0, 0)
-	//this makes the video capture not inverted 
-	//background(255,10)
 	translate(vidcapture.width, 0)
 	scale(-1, 1)
 
@@ -83,6 +85,7 @@ function draw(){
 			ellipse(pos[0], pos[1], diam/4, diam/4, 2)
 				theta += 0.001;
 
+			//CREDIT FOR FADE: https://editor.p5js.org/remarkability/sketches/rtM08miUD
 			if (fade<50) fadeAmount = 0.01; 
  
   			if (fade>255) fadeAmount= -10; 
