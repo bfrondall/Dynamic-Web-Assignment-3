@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+html,body {
+	min-height: 100vh;
+	margin: 0;
+	background-color: lightblue;
+}
+
+h1{
+	text-align: center;
+	padding: 10px;
+}
+
+h2{
+	text-align: center;
+	padding-left: 10px;
+	color: black;
+}
+
+h3{
+	float: left;
+	padding-left: 125px;
+}
+
+div{
+	float: right;
+	width: 1125px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+}
+
